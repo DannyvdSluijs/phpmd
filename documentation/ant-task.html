@@ -10,13 +10,13 @@
     <meta name="keywords" content="PHPMD, PMD, Project Mess Detection, Design, Maintenance, Quality Assurence, Violations, Reporting" />
     <meta name="author" content="Manuel Pichler" />
     <meta name="language" content="en" />
-    <meta name="date" content="Thu, 05 Sep 2019 08:11:21 +0000" />
+    <meta name="date" content="Tue, 20 Jun 2023 17:56:54 +0000" />
     <meta name="robots" content="all" />
 
     <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
     <meta name="DC.title" content="About" />
     <meta name="DC.creator" content="Manuel Pichler" />
-    <meta name="DC.date" content="Thu, 05 Sep 2019 08:11:21 +0000" />
+    <meta name="DC.date" content="Tue, 20 Jun 2023 17:56:54 +0000" />
     <meta name="DC.rights" content="BSD 3-Clause" />
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -36,7 +36,7 @@
 <h2>PHPMD ant task usage</h2>
 <p>To ease the usage of PHPMD in your build process we provide an <a href="http://ant.apache.org/manual/targets.html">ant task</a>
 that integrates PHPMD into the <a href="http://ant.apache.org/">ant</a> build tool. The ant task jar file can
-be found in the <a href="download/extensions#ant-task">download</a> section of the PHPMD homepage.</p>
+be found in the <a href="/download/extensions#ant-task">download</a> section of the PHPMD homepage.</p>
 <p>To make the task available in your ant build file you have two options.
 The first option is to copy or link the <code>*.jar</code> file into the <code>lib</code>
 directory of your ant installation. :</p>
@@ -79,7 +79,7 @@ in this build: :</p>
 <a id="parameters"></a>
 <h2>Parameters</h2>
 <p>The following attributes can be defined on the PHPMD task xml-element.</p>
-<table><tr><th>Attribute</th><th>Description</th><th>Required</th></tr><tr><td>rulesetfiles  </td><td>A comma delimited list of ruleset files ('rulesets/basic.xml,rulesets/design.xml') or identifiers of build-in rulesets.</td><td>Yes, unless the ruleset nested element is used </td></tr><tr><td>failonerror </td><td>Whether or not to fail the build if any errors occur while processing the files</td><td>No </td></tr><tr><td>failOnRuleViolation </td><td>Whether or not to fail the build if PHPMD finds any problems</td><td>No </td></tr><tr><td>minimumPriority </td><td>The rule priority threshold; rules with lower priority than they will not be used</td><td>No </td></tr><tr><td>maximumPriority </td><td>The rule priority threshold; rules with higher priority than this will not be used</td><td>No </td></tr></table>
+<table><tr><th>Attribute</th><th>Description</th><th>Required</th></tr><tr><td>rulesetfiles</td><td>A comma delimited list of ruleset files ('rulesets/basic.xml,rulesets/design.xml') or identifiers of build-in rulesets.</td><td>Yes, unless the ruleset nested element is used</td></tr><tr><td>failonerror</td><td>Whether or not to fail the build if any errors occur while processing the files</td><td>No</td></tr><tr><td>failOnRuleViolation</td><td>Whether or not to fail the build if PHPMD finds any problems</td><td>No</td></tr><tr><td>minimumPriority</td><td>The rule priority threshold; rules with lower priority than they will not be used</td><td>No</td></tr><tr><td>maximumPriority</td><td>The rule priority threshold; rules with higher priority than this will not be used</td><td>No</td></tr></table>
 <a id="nested-xml-elements"></a>
 <h2>Nested xml elements</h2>
 <p>The <code>&lt;formatter /&gt;</code> specifies the format of and the output file to
@@ -116,13 +116,29 @@ XML formatter in the PHPMD task invocation, i.e.: :</p>
 <div id="navigation">
     <h2>Overview</h2>
     <ul>
-        <li><a href="/about.html" title="About">About</a></li><li><a href="/documentation/index.html" title="Documentation"><strong>Documentation</strong></a><ul><li><a href="/documentation/suppress-warnings.html" title="Suppress warnings">Suppress warnings</a><li><a href="/documentation/writing-a-phpmd-rule.html" title="Writing a PHPMD Rule">Writing a PHPMD Rule</a><li><a href="/documentation/creating-a-ruleset.html" title="Creating a rule set">Creating a rule set</a><li><a href="/documentation/ant-task.html" title="Ant task usage"><strong>Ant task usage</strong></a></ul></li><li><a href="/rules/index.html" title="Rules">Rules</a></li><li><a href="/download/index.html" title="Download">Download</a></li><li><a href="/people-behind.html" title="People behind">People behind</a></li><li><a href="/support/index.html" title="Support &amp; Contact">Support &amp; Contact</a></li>    </ul>
+        <li><a href="/about.html" title="About">About</a></li><li><a href="/documentation/index.html" title="Documentation"><strong>Documentation</strong></a><ul><li><a href="/documentation/suppress-warnings.html" title="Suppress warnings">Suppress warnings</a><li><a href="/documentation/ci-integration.html" title="CI Integration">CI Integration</a><li><a href="/documentation/writing-a-phpmd-rule.html" title="Writing a PHPMD Rule">Writing a PHPMD Rule</a><li><a href="/documentation/creating-a-ruleset.html" title="Creating a rule set">Creating a rule set</a><li><a href="/documentation/ant-task.html" title="Ant task usage"><strong>Ant task usage</strong></a></ul></li><li><a href="/rules/index.html" title="Rules">Rules</a></li><li><a href="/download/index.html" title="Download">Download</a></li><li><a href="/people-behind.html" title="People behind">People behind</a></li><li><a href="/support/index.html" title="Support &amp; Contact">Support &amp; Contact</a></li><li><a href="/for-enterprise.html" title="For Enterprise">For Enterprise</a></li>    </ul>
 </div>
 
 <div id="footer">
     By <strong>Manuel Pichler</strong>
     licensed under <a href="https://opensource.org/licenses/bsd-license.php" title="BSD 3-Clause">BSD 3-Clause</a>
+
+    <span class="follow">
+        <a href="https://twitter.com/php_pmd" title="Follow on Twitter" class="twitter-follow" target="_blank">
+            <i></i> Follow @PHP_PMD
+        </a>
+        <a rel="me" href="https://phpc.social/@phpmd" title="Follow on Mastodon" class="mastodon-follow" target="_blank">
+            <i></i> Follow @phpmd@phpc.social
+        </a>
+    </span>
 </div>
+
+<div id="formats">
+        <a href="https://raw.githubusercontent.com/phpmd/phpmd/master/src/site/rst/documentation/ant-task.rst">Source</a>
+    |
+    <a href="https://github.com/phpmd/phpmd/edit/master/src/site/rst/documentation/ant-task.rst">Edit</a>
+</div>
+
 <script>
     [].forEach.call(document.querySelectorAll('pre > code'), function (code) {
         code.className += ' block';
